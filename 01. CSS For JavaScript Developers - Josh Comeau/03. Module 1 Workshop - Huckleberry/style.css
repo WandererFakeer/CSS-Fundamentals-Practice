@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --space-extra-small: 0.5rem;
+  --space-small: 1rem;
+  --space-medium: 1.5rem;
+  --space-extra-medium: 2rem;
+  --space-large: 3rem;
+  --space-extra-large: 4rem;
+}
+
+/* Common Container */
+.container {
+  width: min(80%, 570px);
+  margin: 0 auto;
+}
+
+/* 01. Header Section */
+.header {
+  padding: var(--space-extra-large) 0 var(--space-extra-large)
+    var(--space-small); /* 4rem 1rem */
+  border-bottom: 8px solid hsl(0deg, 0%, 30%);
+}
+
+.header-heading {
+  margin-bottom: var(--space-large); /* 3rem */
+}
+
+.header-para {
+  inline-size: min(35ch, 100%);
+  font-size: 1.25rem;
+}
+
+.highlight {
+  color: hsl(160deg, 100%, 20%);
+}
+
+.first-header-para {
+  margin-bottom: var(--space-extra-medium); /* 2rem */
+}
+
+/* 02. Main Section */
+.main {
+  background: hsl(0deg, 0%, 40%);
+  padding: var(--space-extra-large) 0; /* 4rem 0 */
+}
+
+.main-container {
+  background: hsl(0deg, 0%, 100%);
+  border-bottom: 8px solid hsl(0deg, 0%, 30%);
+  padding: var(--space-extra-small) 0 var(--space-extra-small)
+    var(--space-extra-small); /* 0.5rem 0 0.5rem 0.5rem */
+}
+
+.main-heading {
+  width: fit-content;
+  background: hsl(45deg, 100%, 50%);
+  margin-bottom: var(--space-small); /* 1rem */
+  margin-left: calc(var(--space-small) * -1); /* -1rem */
+  padding: var(--space-extra-small) var(--space-medium); /* 0.5rem 1.5rem*/
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+}
+
+.main-para {
+  margin-bottom: var(--space-small); /* 1rem */
+  padding: 0 var(--space-extra-small); /* 0 0.5rem */
+}
