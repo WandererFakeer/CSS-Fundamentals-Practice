@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  width: min(85%, 800px);
+  width: min(100% - 2rem, 550 / 16 * 1rem);
 }
 
 .recipe {
@@ -61,3 +61,4 @@ body {
   color: #4b3f2f;
   font-style: italic;
 }
+
